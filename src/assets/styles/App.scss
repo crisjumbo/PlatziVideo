@@ -1,4 +1,12 @@
+@import "./Vars.scss";
+@import "./Queries.scss";
+
 body {
-  color: darkcyan;
-  background-color: palegoldenrod;
+  margin: 0;
+  font-family: $theme-font;
+  background: $main-color;
+}
+
+* {
+  box-sizing: border-box;
 }
