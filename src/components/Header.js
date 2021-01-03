@@ -1,14 +1,12 @@
-import React from "react";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import classNames from "classnames";
-import PropTypes from "prop-types";
+import React from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
-import { logoutRequest } from "../actions";
-import gravatar from "../utils/gravatar";
-import "../assets/styles/components/Header.scss";
-import logo from "../assets/statics/logo-platzi-video-BW2.png";
-import userIcon from "../assets/statics/user-icon.png";
+import { logoutRequest } from '../actions';
+import gravatar from '../utils/gravatar';
+import '../assets/styles/components/Header.scss';
 
 // JSX syntax, returned value must go bettwen (element)
 const Header = (props) => {
@@ -18,19 +16,19 @@ const Header = (props) => {
   const handleLogout = () => {
     props.logoutRequest({});
   };
-  const headerClass = classNames("header", {
+  const headerClass = classNames('header', {
     isLogin,
     isRegister,
   });
   return (
     <header className={headerClass}>
-      <Link to="/">
-        <img className="header__img" src={logo} alt="Platzi Video" />
+      <Link to='/'>
+        <img className='header__img' src='' alt='Platzi Video' />
       </Link>
-      <div className="header__menu">
-        <div className="header__menu--profile">
+      <div className='header__menu'>
+        <div className='header__menu--profile'>
           <img
-            src={hasUser > 0 ? gravatar(user.email) : userIcon}
+            src={hasUser > 0 ? gravatar(user.email) : ''}
             alt={user.email}
           />
           <p>Perfil</p>
@@ -38,18 +36,18 @@ const Header = (props) => {
         <ul>
           {hasUser ? (
             <li>
-              <Link to="/">{user.name}</Link>
+              <Link to='/'>{user.name}</Link>
             </li>
           ) : null}
           {hasUser ? (
             <li>
-              <Link to="/" onClick={handleLogout}>
+              <Link to='/' onClick={handleLogout}>
                 Cerrar Sesión
               </Link>
             </li>
           ) : (
             <li>
-              <Link to="/login"> Iniciar sesion</Link>
+              <Link to='/login'> Iniciar sesion</Link>
             </li>
           )}
         </ul>

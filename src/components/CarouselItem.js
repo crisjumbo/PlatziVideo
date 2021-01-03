@@ -1,13 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { setFavorite, deleteFavorite } from "../actions";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { setFavorite, deleteFavorite } from '../actions';
 
-import "../assets/styles/components/CarouselItem.scss";
-import playIcon from "../assets/statics/play-icon.png";
-import plusIcon from "../assets/statics/plus-icon.png";
-import removeIcon from "../assets/statics/remove-icon.png";
+import '../assets/styles/components/CarouselItem.scss';
 /* The state is already initialized cause Home
    But here there is an action to commit
    This const inside our component contains the imported action
@@ -28,35 +25,35 @@ const CarouselItem = (props) => {
     props.deleteFavorite(itemId);
   };
   return (
-    <div className="carousel-item">
-      <img className="carousel-item__img" src={cover} alt={title} />
-      <div className="carousel-item__details">
+    <div className='carousel-item'>
+      <img className='carousel-item__img' src={cover} alt={title} />
+      <div className='carousel-item__details'>
         <div>
           <Link to={`player/${id}`}>
             <img
-              className="carousel-item__details--img"
-              src={playIcon}
-              alt="Play Icon"
+              className='carousel-item__details--img'
+              src=''
+              alt='Play Icon'
             />
           </Link>
           {isList ? (
             <img
-              className="carousel-item__details--img"
-              src={removeIcon}
-              alt="Remove Icon"
+              className='carousel-item__details--img'
+              src=''
+              alt='Remove Icon'
               onClick={() => handleDeleteFavorite(id)}
             />
           ) : (
             <img
-              className="carousel-item__details--img"
-              src={plusIcon}
-              alt="Plus Icon"
+              className='carousel-item__details--img'
+              src=''
+              alt='Plus Icon'
               onClick={handleFavorite}
             />
           )}
         </div>
-        <p className="carousel-item__details--title">{title}</p>
-        <p className="carousel-item__details--subtitle">
+        <p className='carousel-item__details--title'>{title}</p>
+        <p className='carousel-item__details--subtitle'>
           {`${year}${contentRating}${duration}`}
         </p>
       </div>
