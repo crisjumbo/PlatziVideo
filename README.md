@@ -1,4 +1,4 @@
-# Cristofher Jumbo jimenez (Aybike) 👽
+# Platzi video Platform 👽
 
 Welcome to my portfolio's README file. I am a MERN stack developer who started a repository collection with this my own website. I am adding features in My free time. Also I test new languages and techniques here. So you are very welcome to take a look at the code.
 
