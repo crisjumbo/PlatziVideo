@@ -1,6 +1,9 @@
 # Platzi video Platform 👽
 
-Welcome to my portfolio's README file. I am a MERN stack developer who started a repository collection with this my own website. I am adding features in My free time. Also I test new languages and techniques here. So you are very welcome to take a look at the code.
+Welcome to Platzi video platform project. This is your place if you wish to watch animated films. It is a MERN stack website, using an API where all the films are content and a perfect Frontend employing OAuth to the Login and Register. It is divided in Labels, because through all the history of this repository we added and removed Redux for simple testing. Hope you enjoy it! 
+
+Another questions can be asked too. I'll be glad to answer you,
+made with love with Platzi :green_heart:
 
 ## Status
 ---
