@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development"
+    "dev": "webpack-dev-server --open --mode development"
   },
   "keywords": [],
-  "author": "",
+  "author": "aybike <tonn.raus09@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.6",
@@ -41,5 +41,6 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "repository": "git@github.com:Tonnraus/PlatziVideo.git"
 }
